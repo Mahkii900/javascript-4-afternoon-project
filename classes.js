@@ -104,7 +104,7 @@ class ProgressiveManager extends Manager {
   }
 
   hire(employee) {
-    this.reports.push(employee)
+    super.hire(employee)
 
     if (this.reports.length > 100) {
       this.title = 'Bestest Manager'
@@ -122,7 +122,7 @@ class ProgressiveManager extends Manager {
   }
 
   fire(ind) {
-    this.reports.splice(ind, 1)
+    super.fire(ind)
 
     if (this.reports.length > 100) {
       this.title = 'Bestest Manager'
